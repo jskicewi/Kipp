@@ -1,0 +1,43 @@
+package trivera.core.simpleclass;
+
+//pass by value: x passes a copy to the show method
+
+//pass by reference: y is passed and the location of "String" is 
+//location 19 and both y and val ref the same location of "String"
+
+public class Example1 {
+
+	public static void main(String[] args) {
+		int x = 10;
+		String y = "String";
+		show(x);
+		show(y);
+		// System.out.println(x);
+		System.out.println(y);
+
+		Circle c = new Circle(10);
+		c.setRadius(12);
+		show(c);
+		System.out.println(c.getArea());
+		c.grow();
+		System.out.println(c.getArea());
+
+ 	}
+
+	static void show(Circle val) {
+		System.out.println("A circle with area of " + val.getArea());
+		val.grow();
+	}
+
+	static void show(String val) {
+		System.out.println("val is: " + val);
+		val += " added ";
+		System.out.println(val);
+	}
+
+	static void show(int val) {
+		System.out.println("val is: " + val);
+		val++;
+		return;
+	}
+}

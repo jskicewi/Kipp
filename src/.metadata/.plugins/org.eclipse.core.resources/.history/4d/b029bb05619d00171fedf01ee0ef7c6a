@@ -1,0 +1,15 @@
+package trivera.core.simpleclass;
+
+public class Example1 {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+	static void show (int val) {
+		System.out.println("val is: " + val);
+		val++;
+		return;
+	}
+}

@@ -1,0 +1,42 @@
+package trivera.core.simpleclass;
+
+public class Circle {
+
+	private double radius;
+	private String name;
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public double getRadius() {
+		return radius;
+	}
+
+	public void setRadius(double radius) {
+		this.radius = radius;
+	}
+
+	public Circle(double r) {
+		radius = r;
+	}
+
+	public double getArea() {
+		return 3.14 * radius * radius;
+
+	}
+
+	public void grow() {
+		radius *= 1.10; // radius = radius * 1.1
+	}
+	@Override
+	public String toString() {
+		return "This is a circle named: " + name + ", with a radius of: "+radius +
+				" and an area of: "+ getArea()  ;
+	}
+
+}

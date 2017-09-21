@@ -1,0 +1,17 @@
+package trivera.core.simpleclass;
+
+public class TempConverter {
+
+	public static void main(String[] args) {
+		for (int f = -40; f <= 212; f += 2) {
+
+			System.out.println(f + " : " + f2c(f));
+		}
+
+	}
+
+	static int f2c(int f) {
+		return (int) ((5.0 / 9) * (f - 32));
+	}
+
+}

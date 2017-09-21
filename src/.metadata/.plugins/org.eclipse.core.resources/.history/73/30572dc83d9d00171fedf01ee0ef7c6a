@@ -1,0 +1,55 @@
+package trivera.core.simpleclass;
+
+public class SimpleClass {
+	
+	public SimpleClass() {
+		 this("John Doe");
+	};
+	public SimpleClass(String name) {
+		this(name, 25000);
+	};
+	public SimpleClass(String name, int salary) {
+		this.name = name;
+		this.salary = salary;
+	};
+	
+	
+	private int salary;
+	private String name;
+
+	public int getSalary() {
+		return salary;
+	}
+
+	public void setSalary(int salary) {
+		this.salary = salary;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public static void main(String[] args) {
+		
+		SimpleClass sc = new SimpleClass();
+		//sc.name= "Jim";
+		//sc.salary =30000;
+		SimpleClass sc2 = new SimpleClass("Jennifer");
+		SimpleClass sc3 = new SimpleClass("Fred",10000);
+		
+		
+		System.out.println(sc.name +" makes $"+ sc.salary);
+		System.out.println(sc2.name +" makes $"+ sc2.salary);
+		System.out.println(sc3.name +" makes $"+ sc3.salary);
+		
+		sc2.setSalary(100000);
+		System.out.println(sc2.name +" makes $"+ sc2.salary);
+		
+
+	}
+
+}

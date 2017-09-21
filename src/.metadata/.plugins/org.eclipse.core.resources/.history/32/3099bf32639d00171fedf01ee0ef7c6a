@@ -1,0 +1,22 @@
+package trivera.core.simpleclass;
+//pass by value x passes a copy to the show method
+public class Example1 {
+
+	public static void main(String[] args) {
+		int x = 10;
+		String y = "String";
+		show(x);
+		show(y);
+		System.out.println(x);
+	}
+
+	static void show(String val) {
+		System.out.println("val is: " + val);
+	}
+	
+	static void show(int val) {
+		System.out.println("val is: " + val);
+		val++;
+		return;
+	}
+}

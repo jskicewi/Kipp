@@ -1,0 +1,23 @@
+package trivera.core.simpleclass;
+
+public class Landscaper {
+	public static void main(String[] args) {
+		Circle [] circ = new Circle[3];
+		circ[0]= new Circle(5);
+		circ[1]= new Circle(10);
+		circ[2]= new Circle(15);
+		
+		Landscape frontYard = new Landscape(circ);
+		Landscape backYard = new Landscape(
+				new Circle(2),
+				new Circle(12),
+				new Circle(6),
+				new Circle(22)
+				);
+		
+		System.out.println("Total area: " + frontYard.getArea());
+		System.out.println("Total area: " + backYard.getArea());
+		
+		
+	}
+}

@@ -1,0 +1,5 @@
+package trivera.core.shapes;
+
+public class Shape {
+
+}
